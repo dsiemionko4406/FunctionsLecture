@@ -28,7 +28,8 @@ class ViewController: UIViewController {
 
     @IBAction func voidFunctionPressed(_ sender: Any)
     {
-        
+        //Function Call
+        voidFunction()
     }
     @IBAction func parameterFunctionPressed(_ sender: Any)
     {
@@ -43,6 +44,9 @@ class ViewController: UIViewController {
     {
         
     }
-    
+    //Function Implamentation for Void Function
+    func voidFunction() {
+        voidFunctionLabel.text = "Hello"
+    }
 }
 
