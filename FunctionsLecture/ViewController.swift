@@ -40,7 +40,8 @@ class ViewController: UIViewController {
     }
     @IBAction func returnStatementPressed(_ sender: Any)
     {
-        
+        let valueReturned = returnFunction()
+        returnFunctionLabel.text = valueReturned
     }
     
     @IBAction func returnAndParametersFunction(_ sender: Any)
@@ -54,6 +55,11 @@ class ViewController: UIViewController {
     //Function Implamentation for Parameter Function
     func parameterFunction(name: String)  {
         parameterFunctionLabel.text = "Hello, \(name)"
+    }
+    //Function implementation for return Statement
+    func returnFunction() -> String {
+        let name = "George"
+        return name
     }
     
 }
