@@ -33,7 +33,10 @@ class ViewController: UIViewController {
     }
     @IBAction func parameterFunctionPressed(_ sender: Any)
     {
+        let nameEntered = parameterFunctionTextfield.text!
         
+        //Function Call
+        parameterFunction(name: nameEntered)
     }
     @IBAction func returnStatementPressed(_ sender: Any)
     {
@@ -48,5 +51,10 @@ class ViewController: UIViewController {
     func voidFunction() {
         voidFunctionLabel.text = "Hello"
     }
+    //Function Implamentation for Parameter Function
+    func parameterFunction(name: String)  {
+        parameterFunctionLabel.text = "Hello, \(name)"
+    }
+    
 }
 
